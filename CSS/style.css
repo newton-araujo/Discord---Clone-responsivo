@@ -1,0 +1,355 @@
+@import url(/CSS/reset.css);
+
+/*style = header */
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background: url(/IMG/Header\ Background.png);
+    background-size: cover;
+    max-width: 100%;
+    height: 468px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header h1 {
+    font-family: Luckiest Guy;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3.5rem;
+    width: 400px;
+}
+
+.header p {
+    display: flex;
+    font-family: 'Open Sans';
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    max-width: 900px;
+    margin-top: 20px;
+}
+
+.btn-header {
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+#baixar {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 20px;
+    line-height: 21px;
+    text-align: center;
+}
+
+#baixar a {
+    color: black;
+    font-weight: bold;
+}
+
+#abra {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 20px;
+    line-height: 21px;
+    text-align: center;
+    background-color: black;
+}
+
+#abra a {
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width:428px) {
+    .header {
+        background-image: url(/IMG/Header-celular.png);
+    }
+
+    .btn-header {
+        flex-direction: column;
+    }
+    
+}
+
+/* Style - Main */
+
+.main {
+    display: grid;
+    grid-template-rows: repeat(4, auto) 100px;
+    grid-template-areas: 
+    "section-one section-one section-one section-one"
+    "section-two section-two section-two section-two"
+    "section-three section-three section-three section-three"
+    "section-four section-four section-four section-four"
+    "footer footer footer footer";
+}
+
+/* Section - one */
+@media screen and (max-width:428px){
+    .section-one {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .img-sec-1 {
+        flex-direction: column;
+        width: 379px;
+        height: 252px;
+    }
+
+}
+.section-one {
+    grid-area: section-one;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-sec-1 {
+    display: flex;
+    justify-items: center;
+    
+}
+
+.text-sec-1 {
+    display: flex;
+    flex-direction: column;
+    width: 329px;
+    height: 270px;
+    margin-top: 10px;
+}
+
+.text-sec-1 h2{
+    font-family: 'Luckiest Guy';
+    font-weight: 900px;
+    font-size: 35px;
+    line-height: 54,47px;
+    text-align: left;
+}
+
+.text-sec-1 p {
+    display: flex;
+    margin-top: 20px;
+    text-align: left;
+    font-family: 'Open Sans';
+    color: black;
+}
+
+/*Section - Two*/
+@media screen and (max-width:428px) {
+    .section-two {
+        flex-direction: column;
+        width: 428px;
+    }
+    
+    .text-sec-2 {
+        flex-direction: column;
+        
+    }
+    
+
+    .img-sec-2 img{
+        flex-direction: column;
+        width: 379px;
+        height: 252px;
+    }
+    
+}
+
+.section-two {
+    grid-area: section-two;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+    gap: 1;
+}
+
+.text-sec-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 118px;
+    width: 351px;
+    height: 212px;
+}
+
+.text-sec-2 h2 {
+    display: flex;
+    font-family: 'Luckiest Guy';
+    font-size: 35px;
+}
+
+.text-sec-2 p{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    color: black;
+}
+
+.img-sec-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 607px;
+    height: 394px;
+}
+
+/*Section - Three*/
+
+@media screen  and (max-width:428px){
+    .section-three {
+        flex-direction: column;
+        width: 428px;
+
+    }
+
+    .img-sec-3 img {
+        flex-direction: column;
+        width: 379px;
+        height: 215px;
+    }
+
+    
+}
+
+.section-three {
+    grid-area: section-three;
+    display: flex;
+}
+
+/* Section - Four */
+
+@media screen and (max-width:428px) {
+    .section-four {
+        flex-direction: column;
+        width: 428px;
+        text-align: center;
+    }
+
+    .text-sec-4 {
+        flex-direction: column;
+        width: 428px;
+    }
+
+    .text-sec-4 h2 {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .img-sec-4 img {
+        flex-direction: column;
+        width: 369px;
+        height: 210px;
+    }
+    
+}
+
+
+.section-four {
+    grid-area: section-four;
+    display: flex;
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(32, 32, 56);
+    grid-area: footer;
+    display: flex;
+}
+
+.section-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-sec-3 {
+    display: flex;
+    flex-direction: column;
+    width: 351px;
+    height: 215px;
+}
+.text-sec-3 h2 {
+    display: flex;
+    flex-direction: column;
+    font-family: Luckiest Guy;
+    font-size: 35px;
+}
+
+.text-sec-3 p {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans';
+    margin-top: 20px;
+    font-size: 16px;
+    color: black
+}
+
+/*Section - Four*/
+
+.section-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(248, 248, 248);;
+}
+
+.text-sec-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-sec-4 h2 {
+    font-family: Luckiest Guy;
+    font-size: 40px;
+    margin-top: 20px;
+    width: 608px;
+    text-align: center;
+}
+
+.text-sec-4 p {
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: 'Open Sans';
+    width: 784px;
+    color: black;
+
+}
+
+@media screen and (max-width: 428px){
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }    
+
+    .footer img {
+        flex-direction: column;
+        display: flex;
+        width: 379px;
+        height: 215px;
+    }
+}
+
+.footer {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
